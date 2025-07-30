@@ -1,0 +1,10 @@
+<div class="card-container">
+    @for(card of card; track card.id){
+    <div class="card">
+        <p>{{card.id}}</p>
+        <p>{{card.title}}</p>
+        <p>{{card.description}}</p>
+        <button class="edit" (click)="edit(card)">Edit</button>
+    </div>
+}
+</div>
