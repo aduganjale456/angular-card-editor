@@ -44,7 +44,7 @@ card:any = [
 constructor(private dialog:MatDialog){}
 edit(card: any){
   // alert('oye11');
-  const dialogRef = this.dialog.open(EditPopupComponent,{width:'300px', data:card});
+  const dialogRef = this.dialog.open(EditPopupComponent,{width:'500px', data:card});
   console.log('card', card)
 
   dialogRef.afterClosed().subscribe(result=>{
